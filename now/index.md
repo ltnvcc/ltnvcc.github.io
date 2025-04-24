@@ -2,7 +2,9 @@
 ---
 layout: default
 title: Now
+subtitle: "What I'm currently learning or working on"
 ---
+
 *Updated April 2025*
 
 - Automating SEO health checks using Python & dbt.  

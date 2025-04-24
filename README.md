@@ -1,3 +1,2 @@
-# New Rip Jekyll Site
-
-Pretty permalinks, Markdown posts, Inter + Newsreader fonts.
+# New Rip Jekyll Site v2
+Pretty permalinks, page subtitles, Inter body text, Newsreader titles.

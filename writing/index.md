@@ -1,9 +1,9 @@
 
 ---
 layout: default
-title: Writing
+title: My Scribs
+subtitle: "Thoughts on work and life"
 ---
-Essays & notes on SEO, data, and purposeful living.
 
 <ul>
 {% for post in site.posts %}
