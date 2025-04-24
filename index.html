@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+:root{
+  --accent:#356859;
+  --bg:#fafafa;
+  --fg:#222;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--fg);
+  display:flex;min-height:100vh;flex-direction:column;
+  line-height:1.8;
+}
+h1,h2,h3{font-weight:700;letter-spacing:-0.4px;}
+.container{margin:auto;max-width:800px;padding:2.5rem 1.2rem;text-align:left;}
+nav{width:100%;background:#fff;border-bottom:1px solid #ddd;padding:0.75rem 1rem;text-align:center;position:sticky;top:0;}
+nav a{margin:0 1rem;color:var(--accent);text-decoration:none;font-weight:600;}
+.avatar{width:160px;height:160px;border-radius:50%;object-fit:cover;border:3px solid var(--accent)}
+.btn{padding:0.75rem 1.2rem;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;border-radius:4px;transition:opacity .2s;}
+.btn:hover{opacity:.9;}
+footer{text-align:center;font-size:0.8rem;padding:2rem 0 1rem;color:#555;}
+a.back{color:var(--accent);text-decoration:none;}
+p,ul,ol{margin-top:1rem;margin-bottom:1rem;}
+ul{padding-left:1.4rem;}
+</style>
+  <title>Nenad Latinovic · New Rip</title>
+</head>
+<body>
+  <div class="container" style="text-align:center;">
+    <h1>Nenad Latinovic</h1>
+    <img src="img/avatar.jpg" alt="Nenad Latinovic" class="avatar" style="margin:1.5rem auto;">
+    <div style="display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-top:1.5rem;">
+      <a class="btn" href="/about/">About</a>
+      <a class="btn" href="/now/">Now</a>
+      <a class="btn" href="/writing/">Writing</a>
+    </div>
+  </div>
+  <footer style="text-align:center;font-size:0.8rem;padding:2rem 0 1rem;color:#555;">&copy; 2025 Nenad Latinovic · Built with plain HTML on GitHub Pages</footer>
+</body></html>

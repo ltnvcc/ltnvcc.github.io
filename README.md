@@ -1,2 +1,3 @@
-# ltnvcc.github.io
-Nenad Latinović's personal page
+# New Rip Jekyll Site
+
+Pretty permalinks, Markdown posts, Inter + Newsreader fonts.

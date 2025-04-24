@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Newsreader:wght@700&display=swap" rel="stylesheet">
+  <style>
+:root{
+  --accent:#356859;
+  --bg:#fafafa;
+  --fg:#222;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--fg);
+  display:flex;min-height:100vh;flex-direction:column;
+  line-height:1.8;
+}
+h1,h2,h3{font-weight:700;letter-spacing:-0.4px;}
+.container{margin:auto;max-width:800px;padding:2.5rem 1.2rem;text-align:left;}
+nav{width:100%;background:#fff;border-bottom:1px solid #ddd;padding:0.75rem 1rem;text-align:center;position:sticky;top:0;}
+nav a{margin:0 1rem;color:var(--accent);text-decoration:none;font-weight:600;}
+.avatar{width:160px;height:160px;border-radius:50%;object-fit:cover;border:3px solid var(--accent)}
+.btn{padding:0.75rem 1.2rem;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;border-radius:4px;transition:opacity .2s;}
+.btn:hover{opacity:.9;}
+footer{text-align:center;font-size:0.8rem;padding:2rem 0 1rem;color:#555;}
+a.back{color:var(--accent);text-decoration:none;}
+p,ul,ol{margin-top:1rem;margin-bottom:1rem;}
+ul{padding-left:1.4rem;}
+</style>
+  <title>{{ page.title }}</title>
+</head>
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/now/">Now</a>
+    <a href="/writing/">Writing</a>
+  </nav>
+  <div class="container">
+    <h1 style="font-family:'Newsreader',serif;font-size:2.6rem;margin-bottom:1rem;">{{ page.title }}</h1>
+    <p style="color:#555;margin-bottom:2rem;">Posted {{ page.date | date: "%d %b %Y" }}</p>
+    {{ content }}
+    <p style="margin-top:2rem;"><a class="back" href="/writing/">← All writing</a></p>
+  </div>
+  <footer>&copy; 2025 Nenad Latinovic</footer>
+</body></html>
